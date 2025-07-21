@@ -1,0 +1,39 @@
+/* Atur ukuran dan style map */
+#map {
+    height: 100vh; /* Full height untuk peta */
+    width: 100%; 
+    /* position: relative;
+    z-index: 1; Peta ada di lapisan bawah */
+}
+
+/* Container untuk tombol, diatur di sebelah kanan */
+.button-container {
+    position: absolute;
+    right: 20px; /* Posisi di sebelah kanan */
+    top: 50%; /* Sejajar di tengah secara vertikal */
+    display: flex;
+    flex-direction: column; /* Menyusun tombol secara vertikal */
+    transform: translateY(-50%); /* Menyelaraskan ke tengah vertikal */
+    z-index: 999; /* Tombol berada di lapisan paling atas */
+}
+
+/* Style untuk tombol di atas peta */
+#add-location-btn, #add-flood-point-btn {
+    padding: 10px 15px;
+    background-color: white; /* Warna tombol putih */
+    color: black; /* Warna teks hitam */
+    border: 1px solid #007bff; /* Border biru */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0; /* Jarak antar tombol */
+    width: 160px; /* Lebar tombol */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+    z-index: 999; /* Tombol tetap di lapisan paling atas */
+}
+
+/* Tambahkan efek hover pada tombol */
+#add-location-btn:hover, #add-flood-point-btn:hover {
+    background-color: #007bff; /* Warna hover biru */
+    color: white; /* Teks putih saat hover */
+}
